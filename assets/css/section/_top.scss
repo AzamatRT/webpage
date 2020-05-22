@@ -1,0 +1,31 @@
+#section-top{
+    box-sizing: border-box;
+    height: 141px;
+    padding: 40px 0; //отступы сверху снизу
+    position: relative;
+    z-index: 2;
+    ul{
+        @extend %liststyle;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 0 35px; //отступы элементов по бокам
+            a{
+                color: rgb(221, 207, 193); //элементы "а" цвет белый
+                font-weight: 600;
+                font-size: 24px;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: color 0.25s ease-in;
+                &:hover{
+                    color: rgba(255, 210, 128, 0.829);
+                }
+            }
+            &.logotype{
+                margin-left: 65px;
+                margin-right: 65px;
+            }
+        }
+    }
+}

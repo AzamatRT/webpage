@@ -1,0 +1,17 @@
+.el-button{
+    border: none;
+    padding: 12px 22px;
+    background: #7c7878cc;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(179, 179, 179);
+}
+.el-button__green
+{
+    @extend .el-button;
+    background: $green-clr;
+    color: #FFF;
+}
